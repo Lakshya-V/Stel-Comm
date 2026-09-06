@@ -1,2 +1,5 @@
 opencv-python==5.0.0
 mediapipe==0.10.35
+networkx
+matplotlib
+simpy

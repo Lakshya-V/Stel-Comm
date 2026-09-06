@@ -21,3 +21,20 @@ python detect.py
 ```
 
 Press `q` to stop the webcam window.
+
+gesture_mesh_project/
+│
+├── models/
+│   └── hand_landmarker.task       # Google's MediaPipe model binary
+│
+├── src/
+│   ├── __init__.py
+│   ├── gesture_detector.py        # MediaPipe pipeline & gesture recognition logic
+│   ├── network_mesh.py            # NetworkX graph representation & routing rules
+│   └── socket_comm.py             # Socket server/client for inter-laptop messaging
+│
+├── sender_app.py                  # MAIN program for Laptop A (Sender)
+├── receiver_app.py                # MAIN program for Laptop B (Receiver)
+│
+├── requirements.txt               # Dependencies list
+└── README.md                      # Setup and usage instructions
